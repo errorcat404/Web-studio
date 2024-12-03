@@ -1,0 +1,167 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+p, h4, h3{
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo{
+    height: 80%;
+}
+
+.container{
+    margin: 0 auto;
+    padding-top: 6vh;
+    width: 100vw;
+}
+header{
+    padding-left: 2vh;
+}
+.header__img{
+    width: 90vw;
+}
+.header__h1{
+    font-size: 2rem;
+}
+.header__p{
+    font-size: 1.5rem;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.header__button{
+    display: flex;
+    width: 30%;
+    height: 5vh;
+    background: #F6A410;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.main__start{
+    padding-left: 2vh;
+}
+.main__text{
+    padding-top: 1vh;
+    padding-right: 1vh;
+}
+.main__info {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_box {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.main_image{
+    width: 60%;
+    padding: 2vh;
+}
+.top{
+   padding: 2vh;
+}
+.skills{
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skill_box{
+    background: #83B6E0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 2vh;
+    border-radius: 15px;
+    color: #F2F3F3;
+    text-align: center; 
+    margin-bottom: 2vh;
+}
+.hobby{
+    width: 70%;
+    padding: 1vh;
+}
+.name{
+    font-size: 1rem;
+}
+.skill_text{
+    font-size: 0.8rem;
+}
+.p_dew{
+    width: 100vw;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2vh;
+}
+.imgade{
+    width: 30%;
+}
+/* Desktop Style */
+@media screen and (min-width: 630px) {
+    .skills{
+        height: none;
+        flex-direction: row;
+    }
+    .skill_box{
+        width: 40%;
+    }
+    header{
+        display: flex;
+        columns: 2;
+
+    }
+    .header__img{
+        width: 50%;
+    }
+    .footer-menu {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .footer-column {
+      margin-bottom: 15px;
+    }
+    .footer {
+      background-color: #e8f5f5;
+      padding: 20px;
+      margin-top: auto;
+    }
+
+
+    .footer-logo img {
+      max-width: 60px;
+      margin-bottom: 10px;
+    }
+    .footer-social {
+      display: flex;
+      justify-content: center;
+    }
+}
+
+/* Mobile Style */
+@media screen and (min-width: 930px) {
+    .skill_box{
+        width: 30%;
+    }
+}
+

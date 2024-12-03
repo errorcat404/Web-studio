@@ -1,0 +1,1057 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Trirong", serif;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+p, h4, h3{
+	font-family: "Inter", sans-serif;
+}
+@media screen and (min-width: 0px) and (max-width: 425px){
+	.container{
+		width: 100%;
+	}
+	.nav_logo{
+		height: 8vh;
+		width: 17vw;
+		background-image: url(../img/logo.png);	
+		background-size: cover;
+	}
+	nav{
+		background: white;
+		position: relative;
+		width: 83vw;
+		text-align: center;
+		height: 8vh;
+		font-family: sans-serif;
+	}
+	#check-menu{
+		display: none;
+	}
+	label{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		z-index: 2;
+	}
+	.burger-line{
+		border: 2px solid grey;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 50px;
+		height: 2px;
+		background: white;
+		-webkit-transition: 0.25s;
+		transition: 0.5s;
+	}
+	.second, .third{
+		top: 27px;
+		background: grey;
+	}
+	.fourth{
+		top: 45px;
+		background: grey;
+	}
+	.menu{
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		bottom: 0;
+		left: 0;
+		-webkit-transform: translateY(100%);
+		transform: translateY(100%);
+		max-height: 0;
+		font-size: 0;
+		overflow: hidden;
+		-webkit-transition:0.5s;
+		transition:0.5s;
+	}
+	.menu a{
+		display: block;
+		height: 50px;
+		width: 100%;
+		padding: 10px;
+		color: darkgrey;
+		text-decoration: none;
+		background: white;
+	}
+	#check-menu:checked ~ .menu{
+		max-height: 500px;
+		font-size: 16px;
+	}
+	#check-menu:checked ~ .first{
+		display: none;
+	}
+	#check-menu:checked ~ .second{
+		-webkit-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
+	#check-menu:checked ~ .third{
+		-webkit-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+	}
+	#check-menu:checked ~ .fourth{
+		display: none;
+	}
+	.header_nav{
+		height: 8vh;
+		width: 100%;
+		display: flex;
+	}
+	header{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	h1{
+		font-size: 30px;
+		color: black;
+	}
+	section h3{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	section h3:nth-child(1){
+		margin-top: 0px;
+	}
+	.header_img{
+		height: 28vh;
+		width: 100vw;
+		background-image: url(../img/header.png);
+		background-size: cover;
+		margin: 0 auto;
+	}
+	.header_texts{
+		margin: 0 auto;
+		width: 92%;
+		align-self: center;
+	}
+	button{
+		font-family: "Trirong", serif;
+		border: none;
+		font-size: 16px;
+		height: 35px;
+		width: 28%;
+		color: white;
+		box-shadow: 0px 2px 5px grey ; 
+		background: orange;
+		border-radius: 8px;
+	}
+	main{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.img_notion{
+		width: 100vw;
+	}
+	p{
+		font-size: 16px;
+	}
+	section{
+		width: 92%;
+		margin: 0 auto;
+	}
+	section:nth-child(2){
+		width: 98%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.notion_pos{
+		height: 400px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.pos_box{
+		display: flex;
+		font-family: "Trirong", serif;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 40%;
+		height: 70px;
+		background: grey;
+		border-radius: 20px;
+	}
+	.pos_box:nth-child(8){
+		width: 70%;
+	}
+	.pos_box p{
+		font-size: 20px;
+	}
+	.section_h1{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.section_img{
+		height: 125px;
+		background-image: url(../img/pz_row.png);
+		background-size: cover;
+	}
+	.section_text1{
+		margin: 0 auto;
+		color: #333333;
+	}
+	.section_text2{
+		margin: 0 auto;
+		color: #333333;
+	}
+	.section_text{
+		width: 85%;
+	}
+	.text_img{
+		height: 300px;
+		width: 100%;
+		background-image: url(../img/section.png);
+		background-size: cover;
+	}
+	.section_leftline{
+		width: 4%;
+		background-size: cover;
+		background-image: url(../img/mob_line.png);
+	}
+	.notion_pm{
+		width: 70%;
+		text-align: center;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+	.not_p{
+		padding-left: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 100%;
+		height: 370px;
+	}
+	.not_m{
+		padding-left: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 100%;
+		height: 190px;
+	}
+	.plus_box, .minus_box{
+		height: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		border-bottom: 5px solid #1E8A8C;
+	}
+	.not_m h1{
+		width: 100%;
+		padding: 0;
+		background: #1E8A8C;
+		height: 50px;
+		border-radius: 15px;
+	}
+	.not_p h1{
+		width: 100%;
+		padding: 0;
+		background: #1E8A8C;
+		height: 50px;
+		border-radius: 15px;
+	}
+	.notion_pm img{
+		width: 80%;
+	}
+	.history{
+		border: 1px solid #DBEEEA;
+		border-radius: 20px;
+		box-shadow: 2px 5px 30px 2px grey;
+		width: 90%;
+		padding: 10px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		color: #6A6A6A;
+	}
+	.history img{
+		width: 20%;
+	}
+	.history h3{
+		width: 100%;
+		text-align: center;
+	}
+	footer{
+		width: 100%;
+		background: #DAF1E982;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.footer_up{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	footer h3{
+		font-family: "Trirong", serif;
+		font-size: 19px;
+	}
+	footer a{
+		font-family: "Trirong", serif;
+		font-size: 19px;
+		text-decoration: none;
+	}
+	.footer_img{
+		height: 60px;
+		width: 20%;
+		background-size: cover;
+		background-image: url(../img/logo.png);
+	}
+	.footer_textbox{
+		height: 30%;
+		width: 45%;
+	}
+	footer p{
+		text-align: center;
+		font-size: 16px;
+		color: grey;
+		width: 100%;
+	}
+	.footer_textbox p{
+		color: grey;
+		text-align: left;
+	}
+	.footer_line{
+		height: 1px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 1px solid grey;
+		width: 85%;
+		align-self: center;
+	}
+	.footer_media{
+		width: 70%;
+		align-self: center;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.media_item{
+		height: 30px;
+		width: 15%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.media_item:nth-child(1){
+		background-image: url(../img/twit.png);	
+	}
+	.media_item:nth-child(2){
+		background-image: url(../img/face.png);	
+	}
+	.media_item:nth-child(3){
+		background-image: url(../img/inst.png);	
+	}
+	.media_item:nth-child(4){
+		background-image: url(../img/in.png);	
+	}
+	.media_item:nth-child(5){
+		background-image: url(../img/yout.png);	
+	}
+}
+@media screen and (max-width:374px){
+	.nav_logo{
+		width: 20vw;
+		height: 8vh;
+	}
+	nav{
+		width: 80vw;
+	}
+	.header_img{
+		height: 23vh;
+	}
+	.section_img{
+		height: 100px;
+	}
+	.text_img{
+		height: 255px;
+	}
+	.pos_box p{
+		font-size: 18px;
+	}
+	.notion_pm{
+		width: 100%;
+	}
+} /*<--------------------------------------------тут початок таблет верс.*/
+@media screen and (min-width: 426px) and (max-width: 769px){
+	.container{
+		width: 100%;
+	}
+	.nav_logo{
+		height: 45px;
+		width: 7%;
+		background-image: url(../img/logo.png);	
+		background-size: cover;
+	}
+	nav{
+		width: 90%;
+		text-align: center;
+		font-family: sans-serif;
+		align-self: flex-end;
+	}
+	#check-menu{
+		display: none;
+	}
+	label{
+		display: none;
+	}
+	.menu{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.nav_item{
+		background: none;
+	}
+	.menu a{
+		height: 30px;
+		font-size: 15px;
+		color: darkgrey;
+		text-decoration: none;
+	}
+	.header_nav{
+		height: 50px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	header{
+		width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+	}
+	h1{
+		font-size: 30px;
+		color: black;
+	}
+	section h3{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	section h3:nth-child(1){
+		margin-top: 0px;
+	}
+	.header_img{
+		height: 230px;
+		width: 55%;
+		background-image: url(../img/header.png);
+		background-size: cover;
+		margin: 0 auto;
+	}
+	.header_texts{
+		margin: 0 auto;
+		width: 45%;
+		align-self: center;
+		padding-left: 10px;
+	}
+	button{
+		font-family: "Trirong", serif;
+		border: none;
+		margin-top: 10px;
+		font-size: 16px;
+		height: 35px;
+		width: 28%;
+		color: white;
+		box-shadow: 0px 2px 5px grey ; 
+		background: orange;
+		border-radius: 8px;
+	}
+	main{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.img_notion{
+		width: 100vw;
+	}
+	p{
+		font-size: 16px;
+	}
+	section{
+		width: 97%;
+		margin: 0 auto;
+	}
+	section:nth-child(2){
+		width: 98%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.notion_pos{
+		height: 400px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.notion_pos h1{
+		width: 100%;
+		text-align: center;
+	}
+	.pos_box{
+		display: flex;
+		font-family: "Trirong", serif;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 27%;
+		height: 90px;
+		background: grey;
+		border-radius: 20px;
+	}
+	.pos_box:nth-child(8){
+		width: 40%;
+	}
+	.pos_box p{
+		font-size: 20px;
+	}
+	.section_h1{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.section_img{
+		height: 200px;
+		width: 80%;
+		margin: 0 auto;
+		background-image: url(../img/pz_row.png);
+		background-size: cover;
+	}
+	.section_text1{
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		color: #333333;
+	}
+	.not_h1{
+		width: 51%;
+	}
+	.not_par{
+		width: 51%;
+	}
+	.img_notion{
+		height: 300px;
+		width: 40%;
+	}
+	.section_text{
+		width: 85%;
+	}
+	.section_text h3{
+		color: #333333;
+	}
+	.text_img{
+		height: 400px;
+		width: 72%;
+		margin: 0 auto;
+		background-image: url(../img/section.png);
+		background-size: cover;
+	}
+	.section_leftline{
+		width: 2%;
+		background-size: cover;
+		background-image: url(../img/des_line.png);
+	}
+	.notion_pm{
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.not_p{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 30%;
+		height: 370px;
+	}
+	.not_m{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 30%;
+		height: 190px;
+	}
+	.plus_box, .minus_box{
+		height: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		border-bottom: 5px solid #1E8A8C;
+	}
+	.not_m h1{
+		width: 100%;
+		padding: 0;
+		font-size: 22px;
+		background: #1E8A8C;
+		height: 50px;
+		border-radius: 15px;
+	}
+	.not_p h1{
+		width: 100%;
+		padding: 0;
+		font-size: 20px;
+		background: #1E8A8C;
+		height: 50px;
+		border-radius: 15px;
+	}
+	.notion_pm img{
+		width: 40%;
+		height: 300px;
+	}
+	.history{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border: 1px solid #DBEEEA;
+		border-radius: 20px;
+		box-shadow: 2px 5px 30px 2px grey;
+		width: 90%;
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		color: #6A6A6A;
+	}
+	.history img{
+		width: 10%;
+	}
+	.history h3{
+		width: 100%;
+		text-align: center;
+	}
+	footer{
+		width: 100%;
+		background: #DAF1E982;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.footer_up{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	footer h3{
+		font-family: "Trirong", serif;
+		font-size: 19px;
+	}
+	footer a{
+		font-family: "Trirong", serif;
+		font-size: 19px;
+		text-decoration: none;
+	}
+	.footer_img{
+		height: 65px;
+		width: 10%;
+		background-size: cover;
+		background-image: url(../img/logo.png);
+	}
+	.footer_textbox{
+		height: 30%;
+		width: 24%;
+	}
+	footer p{
+		text-align: center;
+		font-size: 16px;
+		color: grey;
+		width: 100%;
+	}
+	.footer_textbox p{
+		color: grey;
+		text-align: left;
+	}
+	.footer_line{
+		height: 1px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 1px solid grey;
+		width: 85%;
+		align-self: center;
+	}
+	.footer_media{
+		width: 50%;
+		align-self: center;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.media_item{
+		height: 20px;
+		margin-bottom: 10px;
+		width: 15%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.media_item:nth-child(1){
+		background-image: url(../img/twit.png);	
+	}
+	.media_item:nth-child(2){
+		background-image: url(../img/face.png);	
+	}
+	.media_item:nth-child(3){
+		background-image: url(../img/inst.png);	
+	}
+	.media_item:nth-child(4){
+		background-image: url(../img/in.png);	
+	}
+	.media_item:nth-child(5){
+		background-image: url(../img/yout.png);	
+	}
+}/*<--------------------------------------------тут початок таблет верс.*/
+@media screen and (min-width: 770px) and (max-width: 1999px){
+	.container{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.nav_logo{
+		height: 54px;
+		width: 7%;
+		background-image: url(../img/logo.png);	
+		background-size: cover;
+	}
+	nav{
+		width: 90%;
+		text-align: center;
+		font-family: sans-serif;
+		align-self: flex-end;
+	}
+	#check-menu{
+		display: none;
+	}
+	label{
+		display: none;
+	}
+	.menu{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.nav_item{
+		background: none;
+	}
+	.menu a{
+		height: 30px;
+		font-size: 15px;
+		color: darkgrey;
+		text-decoration: none;
+	}
+	.header_nav{
+		height: 54px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	header{
+		width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+	}
+	h1{
+		font-size: 30px;
+		color: black;
+	}
+	section h3{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	section h3:nth-child(1){
+		margin-top: 0px;
+	}
+	.header_img{
+		height: 270px;
+		width: 55%;
+		background-image: url(../img/header.png);
+		background-size: cover;
+		margin: 0 auto;
+	}
+	.header_texts{
+		margin: 0 auto;
+		width: 45%;
+		align-self: center;
+		padding-left: 10px;
+	}
+	button{
+		font-family: "Trirong", serif;
+		border: none;
+		margin-top: 10px;
+		font-size: 16px;
+		height: 35px;
+		width: 28%;
+		color: white;
+		box-shadow: 0px 2px 5px grey ; 
+		background: orange;
+		border-radius: 8px;
+	}
+	main{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.img_notion{
+		width: 100vw;
+	}
+	p{
+		font-size: 16px;
+	}
+	section{
+		width: 97%;
+		margin: 0 auto;
+	}
+	section:nth-child(2){
+		width: 98%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.notion_pos{
+		height: 400px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.notion_pos h1{
+		width: 100%;
+		text-align: center;
+	}
+	.pos_box{
+		display: flex;
+		font-family: "Trirong", serif;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 26%;
+		height: 90px;
+		background: grey;
+		border-radius: 20px;
+	}
+	.pos_box:nth-child(8){
+		width: 40%;
+	}
+	.pos_box p{
+		font-size: 20px;
+	}
+	.section_h1{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.section_img{
+		height: 250px;
+		width: 80%;
+		margin: 0 auto;
+		background-image: url(../img/pz_row.png);
+		background-size: cover;
+	}
+	.section_text1{
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		color: #333333;
+	}
+	.not_h1{
+		width: 51%;
+	}
+	.not_par{
+		width: 51%;
+	}
+	.img_notion{
+		height: 300px;
+		width: 40%;
+	}
+	.section_text{
+		width: 85%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.section_text p:nth-child(4){
+		width: 50%;
+	}
+	.section_text h3{
+		width: 100%;
+		color: #333333;
+	}
+	.text_img{
+		height: 220px;
+		width: 35%;
+		margin: 0 auto;
+		background-image: url(../img/section.png);
+		background-size: cover;
+	}
+	.section_leftline{
+		width: 2%;
+		background-size: cover;
+		background-image: url(../img/des_line.png);
+	}
+	.notion_pm{
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.not_p{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 30%;
+		height: 370px;
+	}
+	.not_m{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 30%;
+		height: 190px;
+	}
+	.plus_box, .minus_box{
+		height: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		border-bottom: 5px solid #1E8A8C;
+	}
+	.not_m h1{
+		width: 100%;
+		padding: 0;
+		font-size: 22px;
+		background: #1E8A8C;
+		height: 50px;
+		border-radius: 15px;
+	}
+	.not_p h1{
+		width: 100%;
+		padding: 0;
+		font-size: 22px;
+		background: #1E8A8C;
+		height: 50px;
+		border-radius: 15px;
+	}
+	.notion_pm img{
+		width: 40%;
+		height: 300px;
+	}
+	.history{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border: 1px solid #DBEEEA;
+		border-radius: 20px;
+		box-shadow: 2px 5px 30px 2px grey;
+		width: 90%;
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		color: #6A6A6A;
+	}
+	.history img{
+		width: 8%;
+	}
+	.history h3{
+		width: 100%;
+		text-align: center;
+	}
+	footer{
+		width: 100%;
+		background: #DAF1E982;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.footer_up{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	footer h3{
+		font-family: "Trirong", serif;
+		font-size: 19px;
+	}
+	footer a{
+		font-family: "Trirong", serif;
+		font-size: 19px;
+		text-decoration: none;
+	}
+	.footer_img{
+		height: 65px;
+		width: 8%;
+		background-size: cover;
+		background-image: url(../img/logo.png);
+	}
+	.footer_textbox{
+		height: 30%;
+		width: 20%;
+	}
+	footer p{
+		text-align: center;
+		font-size: 16px;
+		color: grey;
+		width: 100%;
+	}
+	.footer_textbox p{
+		color: grey;
+		text-align: left;
+	}
+	.footer_line{
+		height: 1px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 1px solid grey;
+		width: 85%;
+		align-self: center;
+	}
+	.footer_media{
+		width: 50%;
+		align-self: center;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.media_item{
+		height: 20px;
+		margin-bottom: 10px;
+		width: 15%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.media_item:nth-child(1){
+		background-image: url(../img/twit.png);	
+	}
+	.media_item:nth-child(2){
+		background-image: url(../img/face.png);	
+	}
+	.media_item:nth-child(3){
+		background-image: url(../img/inst.png);	
+	}
+	.media_item:nth-child(4){
+		background-image: url(../img/in.png);	
+	}
+	.media_item:nth-child(5){
+		background-image: url(../img/yout.png);	
+	}
+}
